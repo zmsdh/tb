@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>淘宝网</title>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/base.js"></script>
+</head>
+<body>
+    <!-- 菜单栏-->
+    <div class="header">
+        <div class="w">
+            <div class="menu-l">
+                <div class="in">
+                    <div class="china">中国大陆<div class="s"></div></div>
+                    <div class="area">
+                        <ul>
+                            <li><a href="#">全球</a></li>
+                            <li><a href="#">中国大陆</a></li>
+                            <li><a href="#">香港</a></li>
+                            <li><a href="#">台湾</a></li>
+                            <li><a href="#">澳门</a></li>
+                            <li><a href="#">韩国</a></li>
+                            <li><a href="#">马来西亚</a></li>
+                            <li><a href="#">澳大利亚</a></li>
+                            <li><a href="#">新加坡</a></li>
+                            <li><a href="#">新西兰</a></li>
+                            <li><a href="#">加拿大</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <ul>
+                    <li style="margin-left: 90px"><a style="color: #f22e00" href="#">亲，请登陆</a></li>
+                    <li><a href="#">免费注册</a></li>
+                    <li><a href="#">手机逛淘宝</a></li>
+                </ul>
+            </div>
+            <div class="menu-r">
+                <ul>
+                    <li id="li1" class="in">
+                        <a href="#">我的淘宝</a>
+                        <div class="s"></div>
+                        <div class="wdtb"><a href="#">已买到的宝贝</a><a href="#">我的足迹</a></div>
+                    </li>
+                    <li id="shop">
+                        <img class="gw" src="images/gw.jpg" />
+                        <a href="#">购物车</a><div class="s"></div></li>
+                    <li id="li3" class="cang in">
+                        <a href="#"><span id="red"></span>收藏夹</a><div class="s"></div>
+                        <div class="scj"><a href="#">收藏的宝贝</a><a href="#">收藏的店铺</a></div>
+                    </li>
+                    <li><a href="#">商品分类</a></li>
+                    <li><span id="line">|</span></li>
+                    <li class="in"><a href="#">卖家中心</a><div class="s"></div></li>
+                    <li class="in"><a href="#">联系客服</a><div class="s"></div></li>
+                    <li id="li8" class="in">
+                        <a href="#">网站导航</a>
+                        <div class="s"></div>
+                        <div class="wzdh"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 搜索栏-->
+    <div class="m">
+    <div class="ss">
+        <div class="pic"><a href="#"><img src="images/tb.jpg" /></a></div>
+        <div class="search">
+            <input  type="text" placeholder="冰烤地瓜" onfocus="this.placeholder=''" onblur="this.placeholder='冰烤地瓜'"/>
+            <div class="ss-r">搜索</div>
+            <div class="xj"><a href="#"><img src="images/xj.jpg" /></a></div>
+            <div class="search-t">
+                <ul>
+                    <li id="bao">宝贝</li>
+                    <li>天猫</li>
+                    <li>店铺</li>
+                </ul>
+            </div>
+            <div class="item">
+                <ul>
+                    <li><a href="#">新款连衣裙</a></li>
+                    <li><a href="#">四件套</a></li>
+                    <li><a style="color: #FF4200" href="#">超流T恤</a></li>
+                    <li><a href="#">时尚女鞋</a></li>
+                    <li><a href="#">短裤</a></li>
+                    <li><a href="#">半身裙</a></li>
+                    <li><a href="#">男士外套</a></li>
+                    <li><a href="#">墙纸</a></li>
+                    <li><a href="#">行车记录仪</a></li>
+                    <li style="margin-left: 20px"><a href="#">更多&gt</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- 导航栏-->
+    <div class="nav">
+        <div class="w">
+            <div class="nav-l">主题市场</div>
+            <div class="nav-r">
+                <ul>
+                    <li><a href="#">天猫</a></li>
+                    <li><a href="#">聚划算</a></li>
+                    <li><a href="#">天猫超市</a></li>
+                    <li class="nav-line">|</li>
+                    <li><a href="#">淘抢购</a></li>
+                    <li><a href="#">电器城</a></li>
+                    <li><a href="#">司法拍卖</a></li>
+                    <li><a href="#">中国制造</a></li>
+                    <li><a href="#">兴农扶贫</a></li>
+                    <li class="nav-line">|</li>
+                    <li><a href="#">飞猪旅行</a></li>
+                    <li><a href="#">智能生活</a></li>
+                    <li><a href="#">苏宁易购</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 轮播图-->
+    <div class="banner w clearfix">
+        <div class="banner-l">
+            <ul>
+                <li><a href="#">女装</a>/<a href="#">男装</a>/<a href="#">内衣</a><span class="more">&gt</span></li>
+                <li><a href="#">鞋靴</a>/<a href="#">箱包</a>/<a href="#">配件</a><span class="more">&gt</span></li>
+                <li><a href="#">童装玩具</a>/<a href="#">孕产</a>/<a href="#">用品</a><span class="more">&gt</span></li>
+                <li><a href="#">家电</a>/<a href="#">数码</a>/<a href="#">手机</a><span class="more">&gt</span></li>
+                <li><a href="#">美妆</a>/<a href="#">洗护</a>/<a href="#">保健品</a><span class="more">&gt</span></li>
+                <li><a href="#">珠宝</a>/<a href="#">眼镜</a>/<a href="#">手表</a><span class="more">&gt</span></li>
+                <li><a href="#">运动</a>/<a href="#">户外</a>/<a href="#">乐器</a><span class="more">&gt</span></li>
+                <li><a href="#">游戏</a>/<a href="#">动漫</a>/<a href="#">影视</a><span class="more">&gt</span></li>
+                <li><a href="#">美食</a>/<a href="#">生鲜</a>/<a href="#">零食</a><span class="more">&gt</span></li>
+                <li><a href="#">鲜花</a>/<a href="#">宠物</a>/<a href="#">农资</a><span class="more">&gt</span></li>
+                <li><a href="#">房产</a>/<a href="#">装修</a>/<a href="#">建材</a><span class="more">&gt</span></li>
+                <li><a href="#">家具</a>/<a href="#">家饰</a>/<a href="#">家纺</a><span class="more">&gt</span></li>
+                <li><a href="#">汽车</a>/<a href="#">二手车</a>/<a href="#">用品</a><span class="more">&gt</span></li>
+                <li><a href="#">办公</a>/<a href="#">DIY</a>/<a href="#">五金电子</a><span class="more">&gt</span></li>
+                <li><a href="#">百货</a>/<a href="#">餐厨</a>/<a href="#">家庭保健</a><span class="more">&gt</span></li>
+                <li><a href="#">学习</a>/<a href="#">卡券</a>/<a href="#">本地服务</a><span class="more">&gt</span></li>
+            </ul>
+        </div>
+        <div class="banner-c">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li>11</li>
+                <li>12</li>
+                <li>13</li>
+                <li>14</li>
+                <li>15</li>
+                <li>16</li>
+            </ul>
+        </div>
+        <div class="banner-m">
+            <div class="pic">
+                <a href="#"><img src="images/b1.jpg" alt="1"/></a>
+                <a href="#"><img src="images/b2.jpg" alt="2"/></a>
+                <a href="#"><img src="images/b3.jpg" alt="3"/></a>
+                <a href="#"><img src="images/b4.jpg" alt="4"/></a>
+                <a href="#"><img src="images/b5.jpg" alt="5"/></a>
+            </div>
+            <div class="pic-b">
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                </ul>
+            </div>
+            <div class="pic-l"> < </div>
+            <div class="pic-r"> > </div>
+        </div>
+        <div class="banner-r">
+            <img id="banner-p" src="images/tx.jpg" />
+            <div class="hao">Hi!&nbsp;你好</div>
+            <div class="jin"><span>领淘金币抵钱</span><span>会员俱乐部</span></div>
+            <div class="deng clearfix">
+                <ul>
+                    <li><a href="#">登录</a></li>
+                    <li><a href="#">注册</a></li>
+                    <li><a href="#">开店</a></li>
+                </ul>
+            </div>
+            <div class="jub"><a href="#">网上有害信息举报专区<span></span></a></div>
+            <div class="notice">
+                <div class="notice-t">
+                    <ul>
+                        <li class="nn"><a href="#">公告</a></li>
+                        <li><a href="#">规则</a></li>
+                        <li><a href="#">论坛</a></li>
+                        <li><a href="#">安全</a></li>
+                        <li><a href="#">公益</a></li>
+                    </ul>
+                </div>
+                <div class="notice-c clearfix">
+                    <ul id="notice-c-f">
+                        <li><a style="color:#f22e00" href="#">天猫总裁靖捷：消费升级推动新零售爆发</a></li>
+                        <li><a href="#">蒙牛拥抱天猫新零售</a></li>
+                        <li><a href="#">淘宝发布内衣小数据</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">新增淘宝网抽检标准</a></li>
+                        <li><a href="#">淘宝禁售商品管理规定</a></li>
+                        <li><a href="#">新增淘宝网家电行情</a></li>
+                        <li><a href="#">淘宝直播平台管理规定</a></li>
+                    </ul>
+                    <ul>
+                        <li><a style="color:#f22e00"href="#">淘小二分享大促干货</a></li>
+                        <li><a href="#">中差评功能升级</a></li>
+                        <li><a href="#">陌生人拼团功能上线</a></li>
+                        <li><a href="#">运营神器年中大促</a></li>
+                    </ul>
+                    <ul>
+                        <li><a style="color:#f22e00"href="#">魔豆妈妈公益项目开启</a></li>
+                        <li><a style="color:#f22e00" href="#">让母爱永不打烊！</a></li>
+                        <li><a href="#">卖家注意：风险通报！</a></li>
+                        <li><a href="#">售假获刑又起诉！</a></li>
+                    </ul>
+                    <ul>
+                        <li><a style="color:#f22e00"href="#">四重曝光互动新玩法</a></li>
+                        <li><a style="color:#f22e00"href="#">卖家如何设置公益宝贝！</a></li>
+                        <li><a href="#">项目入注公益宝贝！</a></li>
+                        <li><a href="#">公益宝贝卖家捐赠票据</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="sort">
+                <ul>
+                    <li style="border-top-color: #dddddd;"><img src="images/t1.jpg"/><p>充话费</p></li>
+                    <li style="border-top-color: #dddddd;"><img src="images/t2.jpg"/><p>旅行</p></li>
+                    <li style="border-top-color: #dddddd;"><img src="images/t3.jpg"/><p>车险</p></li>
+                    <li style="border-top-color: #dddddd;border-right-color: transparent;"><img src="images/t4.jpg"/><p>游戏</p></li>
+                    <li><img src="images/t5.jpg"/><p>彩票</p></li>
+                    <li><img src="images/t6.jpg"/><p>电影</p></li>
+                    <li><img src="images/t7.jpg"/><p>酒店</p></li>
+                    <li style="border-right-color: transparent;"><img src="images/t8.jpg"/><p>理财</p></li>
+                    <li><img src="images/t9.jpg"/><p>找服务</p></li>
+                    <li><img src="images/t10.jpg"/><p>演出</p></li>
+                    <li><img src="images/t11.jpg"/><p>水电煤</p></li>
+                    <li style="border-right-color: transparent;"><img src="images/t12.jpg"/><p>火车票</p></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="gg w"><img src="images/gg.jpg"/></div>
+    <!-- 商品-->
+    <div class="goods w clearfix">
+        <div class="goods-l">
+            <div class="goods-t">
+                <img style="float: left;" src="images/hh.jpg"/>
+                <span>与品质生活不期而遇</span>
+                <span style="float: right;">换一换</span>
+            </div>
+            <div class="goods-b">
+                <ul>
+                    <li style="margin-left: 17px;margin-right: 10px;"><a href="#">
+                        <img src="images/h1.jpg"/>
+                        <p>WTAPS休闲短袖</p>
+                        <p style="color: #999">纯色的格调设计，极具简约</p></a></li>
+                    <li style="margin-right: 10px;"><a href="#">
+                        <img src="images/h2.jpg"/>
+                        <p>杜嘉班纳印花圆领T恤</p>
+                        <p style="color: #999">清新的印花图案，彰显时尚</p></a></li>
+                    <li><a href="#">
+                        <img src="images/h3.jpg"/>
+                        <p>G－STAR RAW  连帽风衣</p>
+                        <p style="color: #999">时尚感十足的荧光色防风衣</p></a></li>
+                    <li style="margin-left: 17px;margin-right: 10px;"><a href="#">
+                        <img src="images/h4.jpg"/>
+                        <p>LOWA 徒步鞋</p>
+                        <p style="color: #999">采用橡胶大底，耐磨防滑</p></a></li>
+                    <li style="margin-right: 10px;"><a href="#">
+                        <img src="images/h5.jpg"/>
+                        <p>ARMANI polo衫</p>
+                        <p style="color: #999">简约风灰色格调</p></a></li>
+                    <li><a href="#">
+                        <img src="images/h6.jpg"/>
+                        <p>MLB 印花透气POLO衫</p>
+                        <p style="color: #999">展现男士儒雅的气质。</p></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="goods-r">
+            <div class="goods-t">
+                <img style="float: left;" src="images/gj.jpg"/>
+                <span>献给聪明可爱的你</span>
+                <span style="float: right;">更多></span>
+            </div>
+            <div class="goods-b">
+                <ul>
+                    <li style="margin-left: 17px;margin-right: 10px;"><a href="#">
+                        <img src="images/h1.jpg"/>
+                        <p>WTAPS休闲短袖</p>
+                        <p style="color: #999">纯色的格调设计，极具简约</p></a></li>
+                    <li style="margin-right: 10px;"><a href="#">
+                        <img src="images/h2.jpg"/>
+                        <p>杜嘉班纳印花圆领T恤</p>
+                        <p style="color: #999">清新的印花图案，彰显时尚</p></a></li>
+                    <li><a href="#">
+                        <img src="images/h3.jpg"/>
+                        <p>G－STAR RAW  连帽风衣</p>
+                        <p style="color: #999">时尚感十足的荧光色防风衣</p></a></li>
+                    <li style="margin-left: 17px;margin-right: 10px;"><a href="#">
+                        <img src="images/h4.jpg"/>
+                        <p>LOWA 徒步鞋</p>
+                        <p style="color: #999">采用橡胶大底，耐磨防滑</p></a></li>
+                    <li style="margin-right: 10px;"><a href="#">
+                        <img src="images/h5.jpg"/>
+                        <p>ARMANI polo衫</p>
+                        <p style="color: #999">简约风灰色格调</p></a></li>
+                    <li><a href="#">
+                        <img src="images/h6.jpg"/>
+                        <p>MLB 印花透气POLO衫</p>
+                        <p style="color: #999">展现男士儒雅的气质。</p></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="goods w clearfix">
+        <div class="goods-l">
+            <div class="goods-t">
+                <img style="float: left;" src="images/hh.jpg"/>
+                <span>与品质生活不期而遇</span>
+                <span style="float: right;">换一换</span>
+            </div>
+            <div class="goods-b">
+                <ul>
+                    <li style="margin-left: 17px;margin-right: 10px;"><a href="#">
+                        <img src="images/h1.jpg"/>
+                        <p>WTAPS休闲短袖</p>
+                        <p style="color: #999">纯色的格调设计，极具简约</p></a></li>
+                    <li style="margin-right: 10px;"><a href="#">
+                        <img src="images/h2.jpg"/>
+                        <p>杜嘉班纳印花圆领T恤</p>
+                        <p style="color: #999">清新的印花图案，彰显时尚</p></a></li>
+                    <li><a href="#">
+                        <img src="images/h3.jpg"/>
+                        <p>G－STAR RAW  连帽风衣</p>
+                        <p style="color: #999">时尚感十足的荧光色防风衣</p></a></li>
+                    <li style="margin-left: 17px;margin-right: 10px;"><a href="#">
+                        <img src="images/h4.jpg"/>
+                        <p>LOWA 徒步鞋</p>
+                        <p style="color: #999">采用橡胶大底，耐磨防滑</p></a></li>
+                    <li style="margin-right: 10px;"><a href="#">
+                        <img src="images/h5.jpg"/>
+                        <p>ARMANI polo衫</p>
+                        <p style="color: #999">简约风灰色格调</p></a></li>
+                    <li><a href="#">
+                        <img src="images/h6.jpg"/>
+                        <p>MLB 印花透气POLO衫</p>
+                        <p style="color: #999">展现男士儒雅的气质。</p></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="goods-r">
+            <div class="goods-t">
+                <img style="float: left;" src="images/gj.jpg"/>
+                <span>献给聪明可爱的你</span>
+                <span style="float: right;">更多></span>
+            </div>
+            <div class="goods-b">
+                <ul>
+                    <li style="margin-left: 17px;margin-right: 10px;"><a href="#">
+                        <img src="images/h1.jpg"/>
+                        <p>WTAPS休闲短袖</p>
+                        <p style="color: #999">纯色的格调设计，极具简约</p></a></li>
+                    <li style="margin-right: 10px;"><a href="#">
+                        <img src="images/h2.jpg"/>
+                        <p>杜嘉班纳印花圆领T恤</p>
+                        <p style="color: #999">清新的印花图案，彰显时尚</p></a></li>
+                    <li><a href="#">
+                        <img src="images/h3.jpg"/>
+                        <p>G－STAR RAW  连帽风衣</p>
+                        <p style="color: #999">时尚感十足的荧光色防风衣</p></a></li>
+                    <li style="margin-left: 17px;margin-right: 10px;"><a href="#">
+                        <img src="images/h4.jpg"/>
+                        <p>LOWA 徒步鞋</p>
+                        <p style="color: #999">采用橡胶大底，耐磨防滑</p></a></li>
+                    <li style="margin-right: 10px;"><a href="#">
+                        <img src="images/h5.jpg"/>
+                        <p>ARMANI polo衫</p>
+                        <p style="color: #999">简约风灰色格调</p></a></li>
+                    <li><a href="#">
+                        <img src="images/h6.jpg"/>
+                        <p>MLB 印花透气POLO衫</p>
+                        <p style="color: #999">展现男士儒雅的气质。</p></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 猜你喜欢-->
+    <div class="like w">
+        <div class="like-t">I猜你喜欢</div>
+        <div class="like-b">
+            <ul>
+                <li><a href="#">
+                    <img src="images/l1.jpg"/>
+                    <p>YT3500塔式机箱  8个光驱位 服务器标准5U机架机箱</p>
+                    <span><i>¥</i>460</span></a>
+                    <div class="same">
+                        <div class="same-c">
+                            <i>♥</i>找相似 <hr>
+                            <p>发现更多相似宝贝&nbsp;&gt;</p>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">
+                    <img src="images/l2.jpg"/>
+                    <p>中年女夏装短袖T恤妈妈装中长款宽松大码连衣裙雪纺衫</p>
+                    <span><i>¥</i>128</span></a>
+                    <div class="same">
+                        <div class="same-c">
+                            <i>♥</i>找相似 <hr>
+                            <p>发现更多相似宝贝&nbsp;&gt;</p>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">
+                    <img src="images/l3.jpg"/>
+                    <p>绝版老款 FOV 80007 1:32 美军 M142火箭炮发射车 合金成品</p>
+                    <span><i>¥</i>988</span></a>
+                    <div class="same">
+                        <div class="same-c">
+                            <i>♥</i>找相似 <hr>
+                            <p>发现更多相似宝贝&nbsp;&gt;</p>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#"><img src="images/l4.jpg"/>
+                    <p>55寸4K电视机语音遥控手机投屏直播智能WIFI</p>
+                    <span><i>¥</i>650</span></a>
+                    <div class="same">
+                        <div class="same-c">
+                            <i>♥</i>找相似 <hr>
+                            <p>发现更多相似宝贝&nbsp;&gt;</p>
+                        </div>
+                    </div>
+                </li>
+                <li style="border-right-color: transparent;"><a href="#">
+                    <img src="images/l5.jpg"/>
+                    <p>九州风神公爵机箱ATX游戏主机箱台式电脑散热水冷机箱</p>
+                    <span><i>¥</i>369</span></a>
+                    <div class="same">
+                        <div class="same-c">
+                            <i>♥</i>找相似 <hr>
+                            <p>发现更多相似宝贝&nbsp;&gt;</p>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">
+                    <img src="images/l1.jpg"/>
+                    <p>YT3500塔式机箱  8个光驱位 服务器标准5U机架机箱</p>
+                    <span><i>¥</i>460</span></a>
+                    <div class="same">
+                        <div class="same-c">
+                            <i>♥</i>找相似 <hr>
+                            <p>发现更多相似宝贝&nbsp;&gt;</p>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">
+                    <img src="images/l2.jpg"/>
+                    <p>中年女夏装短袖T恤妈妈装中长款宽松大码连衣裙雪纺衫</p>
+                    <span><i>¥</i>128</span></a>
+                    <div class="same">
+                        <div class="same-c">
+                            <i>♥</i>找相似 <hr>
+                            <p>发现更多相似宝贝&nbsp;&gt;</p>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">
+                    <img src="images/l3.jpg"/>
+                    <p>绝版老款 FOV 80007 1:32 美军 M142火箭炮发射车 合金成品</p>
+                    <span><i>¥</i>988</span></a>
+                    <div class="same">
+                        <div class="same-c">
+                            <i>♥</i>找相似 <hr>
+                            <p>发现更多相似宝贝&nbsp;&gt;</p>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#"><img src="images/l4.jpg"/>
+                    <p>55寸4K电视机语音遥控手机投屏直播智能WIFI</p>
+                    <span><i>¥</i>650</span></a>
+                    <div class="same">
+                        <div class="same-c">
+                            <i>♥</i>找相似 <hr>
+                            <p>发现更多相似宝贝&nbsp;&gt;</p>
+                        </div>
+                    </div>
+                </li>
+                <li style="border-right-color: transparent;"><a href="#">
+                    <img src="images/l5.jpg"/>
+                    <p>九州风神公爵机箱ATX游戏主机箱台式电脑散热水冷机箱</p>
+                    <span><i>¥</i>369</span></a>
+                    <div class="same">
+                        <div class="same-c">
+                            <i>♥</i>找相似 <hr>
+                            <p>发现更多相似宝贝&nbsp;&gt;</p>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">
+                    <img src="images/l1.jpg"/>
+                    <p>YT3500塔式机箱  8个光驱位 服务器标准5U机架机箱</p>
+                    <span><i>¥</i>460</span></a>
+                    <div class="same">
+                        <div class="same-c">
+                            <i>♥</i>找相似 <hr>
+                            <p>发现更多相似宝贝&nbsp;&gt;</p>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">
+                    <img src="images/l2.jpg"/>
+                    <p>中年女夏装短袖T恤妈妈装中长款宽松大码连衣裙雪纺衫</p>
+                    <span><i>¥</i>128</span></a>
+                    <div class="same">
+                        <div class="same-c">
+                            <i>♥</i>找相似 <hr>
+                            <p>发现更多相似宝贝&nbsp;&gt;</p>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">
+                    <img src="images/l3.jpg"/>
+                    <p>绝版老款 FOV 80007 1:32 美军 M142火箭炮发射车 合金成品</p>
+                    <span><i>¥</i>988</span></a>
+                    <div class="same">
+                        <div class="same-c">
+                            <i>♥</i>找相似 <hr>
+                            <p>发现更多相似宝贝&nbsp;&gt;</p>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#"><img src="images/l4.jpg"/>
+                    <p>55寸4K电视机语音遥控手机投屏直播智能WIFI</p>
+                    <span><i>¥</i>650</span></a>
+                    <div class="same">
+                        <div class="same-c">
+                            <i>♥</i>找相似 <hr>
+                            <p>发现更多相似宝贝&nbsp;&gt;</p>
+                        </div>
+                    </div>
+                </li>
+                <li style="border-right-color: transparent;"><a href="#">
+                    <img src="images/l5.jpg"/>
+                    <p>九州风神公爵机箱ATX游戏主机箱台式电脑散热水冷机箱</p>
+                    <span><i>¥</i>369</span></a>
+                    <div class="same">
+                        <div class="same-c">
+                            <i>♥</i>找相似 <hr>
+                            <p>发现更多相似宝贝&nbsp;&gt;</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- END-->
+    <div class="end w">
+        <p>END</p>
+    </div>
+    <div class="four w clearfix">
+        <ul>
+            <li><div class="pt"><img src="images/footer1.jpg"/><h4>消费者保障</h4></div>
+                <a href="#">保障范围</a>
+                <a href="#">退货退款流程</a>
+                <a href="#">服务中心</a><br/>
+                <a href="#">更多特色服务</a>
+            </li>
+            <li><div class="pt"><img src="images/footer1.jpg"/><h4>新手上路</h4></div>
+                <a href="#">新手专区</a>
+                <a href="#">消费警示</a>
+                <a href="#">交易安全</a><br/>
+                <a href="#">24小时在线帮助</a>
+                <a href="#">免费开店</a>
+            </li>
+            <li><div class="pt"><img src="images/footer1.jpg"/><h4>付款方式</h4></div>
+                <a href="#">快捷支付</a>
+                <a href="#">信用卡</a>
+                <a href="#">余额宝</a>
+                <a href="#">蚂蚁花呗</a><br/>
+                <a href="#">货到付款</a>
+            </li>
+            <li><div class="pt"><img src="images/footer1.jpg"/><h4>淘宝特色</h4></div>
+                <a href="#">手机淘宝</a>
+                <a href="#">旺旺/旺信</a>
+                <a href="#">大众评审</a>
+            </li>
+        </ul>
+    </div>
+    <!-- footer-->
+    <div class="footer">
+        <div class="footer-t">
+            <a href="#">阿里巴巴集团</a><b>|</b>
+            <a href="#">淘宝网</a><b>|</b>
+            <a href="#">天猫</a><b>|</b>
+            <a href="#">聚划算</a><b>|</b>
+            <a href="#">全球速卖通</a><b>|</b>
+            <a href="#">阿里巴巴国际交易市场</a><b>|</b>
+            <a href="#">阿里妈妈</a><b>|</b>
+            <a href="#">飞猪</a><b>|</b>
+            <a href="#">阿里云计算</a><b>|</b>
+            <a href="#">AliOS</a><b>|</b>
+            <a href="#">阿里通信</a><b>|</b>
+            <a href="#">高德</a><b>|</b>
+            <a href="#">友盟</a><br/>
+            <a href="#">虾米</a><b>|</b>
+            <a href="#">大麦网</a><b>|</b>
+            <a href="#">钉钉</a><b>|</b>
+            <a href="#">支付宝</a><b>|</b>
+            <a href="#">优酷</a><b>|</b>
+            <a href="#">土豆</a><b>|</b>
+            <a href="#">阿里健康</a><b>|</b>
+            <a href="#">阿里影业</a><b>|</b>
+            <a href="#">阿里体育</a><b>|</b>
+        </div>
+        <div class="footer-b">
+            <a id="footer-pic" href="#"><img src="images/f1.jpg"/></a>
+            <a href="#">浙公网安备 33010002000078号</a><b>|</b>
+            <a style="color: #9c9c9c; cursor: auto" href="#">（浙）网械平台备字[2018]第00004号</a><b>|</b>
+            <a href="#">出版物网络交易平台服务经营备案证：新出发浙备字第002号</a><b>|</b>
+            <a href="#">（浙）-经营性-2018-0010</a>
+            <img src="images/f2.jpg"/>
+            <img src="images/f3.jpg"/>
+        </div>
+    </div>
+</body>
+</html>
